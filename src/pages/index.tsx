@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { Header } from "../components/Header";
 import { Logo } from "../components/Logo";
 
+import Footer from "../components/Footer";
+
 import useTranslation from "next-translate/useTranslation";
 
 const MotionFlex = motion(Flex);
@@ -21,6 +23,11 @@ export default function Home() {
         h="100vh"
         my="auto"
         maxWidth={1480}
+        bgImage="/images/image01.png"
+        bgPosition="center"
+        bgRepeat="no-repeat"
+        bgAttachment="fixed"
+        bgSize="cover"
         mx="auto"
         px="6"
         justify="center"
@@ -95,6 +102,7 @@ export default function Home() {
           </Button>
         </Flex>
       </MotionFlex>
+      <Footer />
     </Flex>
   );
 }
