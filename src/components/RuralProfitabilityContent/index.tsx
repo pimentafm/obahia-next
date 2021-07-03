@@ -146,7 +146,12 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
             lg: "1.5rem",
           }}
         >
-          <ListItem>
+          <ListItem
+            _hover={{
+              transition: "0.2s",
+              color: "blue.400",
+            }}
+          >
             <ListIcon as={MdCheckCircle} color="green.500" />
             <NextLink
               href="ftp://obahia.dea.ufv.br/ruralprofitability/ModeloLucratividadeRural.xlsx"
@@ -155,7 +160,12 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
               Modelo de Lucratividade Rural
             </NextLink>
           </ListItem>
-          <ListItem>
+          <ListItem
+            _hover={{
+              transition: "0.2s",
+              color: "blue.400",
+            }}
+          >
             <ListIcon as={MdCheckCircle} color="green.500" />
             <NextLink
               href="ftp://obahia.dea.ufv.br/ruralprofitability/Manual_ModeloLucratividadeRural.pdf"
