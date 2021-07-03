@@ -9,7 +9,7 @@ const MotionContainer = motion(Container);
 import useTranslation from "next-translate/useTranslation";
 
 export default function Hero() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   return (
     <MotionContainer
@@ -34,6 +34,7 @@ export default function Hero() {
           py={6}
           fontWeight={600}
           fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+          color="blue.700"
           lineHeight={"110%"}
         >
           {t("principal")} <br />

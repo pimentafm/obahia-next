@@ -14,7 +14,7 @@ import useTranslation from "next-translate/useTranslation";
 const MotionFlex = motion(Flex);
 
 export default function Home() {
-  const { t, lang } = useTranslation("common");
+  const { t } = useTranslation("common");
 
   return (
     <Flex direction="column" justifyContent="center">
@@ -140,7 +140,7 @@ export default function Home() {
 
       <PageTools
         title={t("title_tool_modflow")}
-        imageSRC="images/modflow.png"
+        imageSRC="images/mfview.png"
         content={t("tool_modflow")}
         toolURL="http://obahia.dea.ufv.br/mfview"
         videoURL=""
@@ -150,7 +150,7 @@ export default function Home() {
         title={t("title_tool_profit")}
         imageSRC="images/profit.jpg"
         content={t("tool_profit")}
-        toolURL=""
+        toolURL="/ruralprofit"
         videoURL=""
       />
 
@@ -158,7 +158,7 @@ export default function Home() {
         title={t("title_tool_governance")}
         imageSRC="images/governance.jpg"
         content={t("tool_governance")}
-        toolURL=""
+        toolURL="/governance"
         videoURL=""
       />
 

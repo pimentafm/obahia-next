@@ -4,6 +4,8 @@ import { Header } from "../components/Header";
 
 import Hero from "../components/Hero";
 
+import Footer from "../components/Footer";
+
 export default function About() {
   return (
     <Fade in={true}>
@@ -21,6 +23,8 @@ export default function About() {
         >
           <Hero />
         </Flex>
+
+        <Footer />
       </Flex>
     </Fade>
   );
