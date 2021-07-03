@@ -24,12 +24,6 @@ export default function Home() {
         w="100%"
         h="100vh"
         my="auto"
-        maxWidth={1480}
-        bgImage="/images/image01.png"
-        bgPosition="center"
-        bgRepeat="no-repeat"
-        bgAttachment="fixed"
-        bgSize="cover"
         mx="auto"
         px="6"
         justify="center"
@@ -42,6 +36,11 @@ export default function Home() {
         }}
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
+        bgImage="/images/image01.png"
+        bgPosition="center"
+        bgRepeat="no-repeat"
+        bgAttachment="fixed"
+        bgSize="cover"
       >
         <Logo />
 
@@ -109,6 +108,7 @@ export default function Home() {
       <PageTools
         id="tools"
         title={t("title_tool_timeseries")}
+        imageSRC="images/timeseries.png"
         content={t("tool_timeseries")}
         toolURL="http://obahia.dea.ufv.br/landuse"
         videoURL=""
@@ -116,6 +116,7 @@ export default function Home() {
 
       <PageTools
         title={t("title_tool_mapserver")}
+        imageSRC="images/mapserver.png"
         content={t("tool_mapserver")}
         toolURL="http://obahia.dea.ufv.br/maps/38/view"
         videoURL=""
@@ -123,6 +124,7 @@ export default function Home() {
 
       <PageTools
         title={t("title_tool_onset")}
+        imageSRC="images/onset.png"
         content={t("tool_onset")}
         toolURL="http://obahia.dea.ufv.br/onset"
         videoURL=""
@@ -130,6 +132,7 @@ export default function Home() {
 
       <PageTools
         title={t("title_tool_flow")}
+        imageSRC="images/flow.png"
         content={t("tool_flow")}
         toolURL="http://obahia.dea.ufv.br/stream"
         videoURL=""
@@ -137,6 +140,7 @@ export default function Home() {
 
       <PageTools
         title={t("title_tool_modflow")}
+        imageSRC="images/modflow.png"
         content={t("tool_modflow")}
         toolURL="http://obahia.dea.ufv.br/mfview"
         videoURL=""
@@ -144,6 +148,7 @@ export default function Home() {
 
       <PageTools
         title={t("title_tool_profit")}
+        imageSRC="images/profit.jpg"
         content={t("tool_profit")}
         toolURL=""
         videoURL=""
@@ -151,6 +156,7 @@ export default function Home() {
 
       <PageTools
         title={t("title_tool_governance")}
+        imageSRC="images/governance.jpg"
         content={t("tool_governance")}
         toolURL=""
         videoURL=""
