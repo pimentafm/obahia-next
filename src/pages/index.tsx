@@ -14,7 +14,7 @@ import useTranslation from "next-translate/useTranslation";
 const MotionFlex = motion(Flex);
 
 export default function Home() {
-  const { t } = useTranslation("common");
+  const { t, lang } = useTranslation("common");
 
   return (
     <Flex direction="column" justifyContent="center">
@@ -91,7 +91,7 @@ export default function Home() {
             m="10px"
             as="a"
             w="200px"
-            href="#services"
+            href="about"
             colorScheme={"blue"}
             bg={"#1f5582"}
             rounded={"full"}

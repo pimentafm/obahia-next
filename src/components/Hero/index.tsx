@@ -4,15 +4,13 @@ import { motion } from "framer-motion";
 
 import { Logo } from "../Logo";
 
-interface HeroProps {
-  principal: string;
-  content1: string;
-  content2: string;
-}
-
 const MotionContainer = motion(Container);
 
-export default function Hero({ principal, content1, content2 }: HeroProps) {
+import useTranslation from "next-translate/useTranslation";
+
+export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <MotionContainer
       maxW={"3xl"}
@@ -38,14 +36,14 @@ export default function Hero({ principal, content1, content2 }: HeroProps) {
           fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
           lineHeight={"110%"}
         >
-          {principal} <br />
+          {t("principal")} <br />
         </Heading>
-        <Text textAlign="justify" style={{ textIndent: 50 }} color={"blue.500"}>
+        {/* <Text textAlign="justify" style={{ textIndent: 50 }} color={"blue.500"}>
           {content1}
         </Text>
         <Text textAlign="justify" style={{ textIndent: 50 }} color={"blue.500"}>
           {content2}
-        </Text>
+        </Text> */}
         <Stack
           direction={"column"}
           spacing={3}

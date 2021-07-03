@@ -4,11 +4,7 @@ import { Header } from "../components/Header";
 
 import Hero from "../components/Hero";
 
-import useTranslation from "next-translate/useTranslation";
-
 export default function About() {
-  const { t } = useTranslation("common");
-
   return (
     <Fade in={true}>
       <Flex direction="column" h="100vh" justifyContent="center">
@@ -23,11 +19,7 @@ export default function About() {
           justify="center"
           alignItems="center"
         >
-          <Hero
-            principal={t("principal")}
-            content1={t("content1")}
-            content2={t("content2")}
-          />
+          <Hero />
         </Flex>
       </Flex>
     </Fade>
