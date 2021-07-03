@@ -1,6 +1,8 @@
 import { extendTheme } from "@chakra-ui/react";
 
 export const theme = extendTheme({
+  useSystemColorMode: false,
+  initialColorMode: "light",
   fonts: {
     body: "Roboto",
     heading: "Roboto",
@@ -35,7 +37,7 @@ export const theme = extendTheme({
         top: 0,
         left: 0,
         width: "100%",
-        height: "6px",
+        height: "4px",
       },
     },
   },
