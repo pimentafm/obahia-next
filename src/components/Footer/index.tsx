@@ -6,6 +6,7 @@ import {
   Text,
   useColorModeValue,
   VisuallyHidden,
+  Image,
 } from "@chakra-ui/react";
 
 import { getYear } from "date-fns";
@@ -16,8 +17,6 @@ import { ReactNode } from "react";
 import useTranslation from "next-translate/useTranslation";
 
 import NextLink from "next/link";
-
-import { LogoIcon } from "../LogoIcon";
 
 const SocialButton = ({
   children,
@@ -58,10 +57,7 @@ export default function SmallCentered() {
   const year = getYear(Date.now());
 
   return (
-    <Box
-      bg={useColorModeValue("gray.50", "gray.900")}
-      color={useColorModeValue("gray.700", "gray.200")}
-    >
+    <Box bg="#1f5582" color="white">
       <Container
         as={Stack}
         maxW={"6xl"}
@@ -70,7 +66,8 @@ export default function SmallCentered() {
         justify={"center"}
         align={"center"}
       >
-        <LogoIcon />
+        <Image src="images/grupo.png" h="80px" />
+
         <Stack direction={"row"} spacing={6}>
           <NextLink href={"/"} locale={lang}>
             {t("menu_home")}
@@ -84,11 +81,7 @@ export default function SmallCentered() {
         </Stack>
       </Container>
 
-      <Box
-        borderTopWidth={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.700")}
-      >
+      <Box borderTopWidth={1} borderStyle={"solid"} borderColor="blue.900">
         <Container
           as={Stack}
           maxW={"6xl"}

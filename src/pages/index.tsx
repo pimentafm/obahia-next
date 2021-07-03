@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { Header } from "../components/Header";
 import { Logo } from "../components/Logo";
 
+import PageTools from "../components/PageTools";
+
 import Footer from "../components/Footer";
 
 import useTranslation from "next-translate/useTranslation";
@@ -48,6 +50,7 @@ export default function Home() {
           fontWeight={600}
           fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
           lineHeight={"110%"}
+          color="white"
         >
           {t("principal")} <br />
         </Heading>
@@ -57,7 +60,7 @@ export default function Home() {
             m="10px"
             as="a"
             w="200px"
-            href="#services"
+            href="#tools"
             colorScheme={"blue"}
             bg={"#1f5582"}
             rounded={"full"}
@@ -102,6 +105,57 @@ export default function Home() {
           </Button>
         </Flex>
       </MotionFlex>
+
+      <PageTools
+        id="tools"
+        title={t("title_tool_timeseries")}
+        content={t("tool_timeseries")}
+        toolURL="http://obahia.dea.ufv.br/landuse"
+        videoURL=""
+      />
+
+      <PageTools
+        title={t("title_tool_mapserver")}
+        content={t("tool_mapserver")}
+        toolURL="http://obahia.dea.ufv.br/maps/38/view"
+        videoURL=""
+      />
+
+      <PageTools
+        title={t("title_tool_onset")}
+        content={t("tool_onset")}
+        toolURL="http://obahia.dea.ufv.br/onset"
+        videoURL=""
+      />
+
+      <PageTools
+        title={t("title_tool_flow")}
+        content={t("tool_flow")}
+        toolURL="http://obahia.dea.ufv.br/stream"
+        videoURL=""
+      />
+
+      <PageTools
+        title={t("title_tool_modflow")}
+        content={t("tool_modflow")}
+        toolURL="http://obahia.dea.ufv.br/mfview"
+        videoURL=""
+      />
+
+      <PageTools
+        title={t("title_tool_profit")}
+        content={t("tool_profit")}
+        toolURL=""
+        videoURL=""
+      />
+
+      <PageTools
+        title={t("title_tool_governance")}
+        content={t("tool_governance")}
+        toolURL=""
+        videoURL=""
+      />
+
       <Footer />
     </Flex>
   );

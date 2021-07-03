@@ -14,15 +14,17 @@ export const NotFound = () => {
     <Flex align={"center"} justify={"center"} h={"100vh"} w={"full"}>
       <Stack
         as={Container}
-        bg="blue.50"
+        bg="blue.100"
         rounded={"xl"}
         p={8}
         spacing={6}
         maxW={"lg"}
         align={"center"}
         textAlign={"center"}
+        boxShadow="2xl"
       >
         <Image src="/images/logo.svg" boxSize="100px" />
+
         <Stack spacing={2}>
           <Heading>Page not found</Heading>
           <Text>
