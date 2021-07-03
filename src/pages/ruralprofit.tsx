@@ -12,7 +12,7 @@ import RuralProfitabilityContent from "../components/RuralProfitabilityContent";
 
 const MotionFlex = motion(Flex);
 
-export default function Home() {
+export default function RuralProfitability() {
   const { t } = useTranslation("common");
 
   return (
