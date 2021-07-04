@@ -60,7 +60,7 @@ export default function Home() {
             {t("principal")} <br />
           </Heading>
 
-          <Flex direction={{ base: "column", sm: "row", md: "row" }}>
+          <Flex direction={{ base: "column", sm: "column", md: "row" }}>
             <Button
               m="10px"
               as="a"
