@@ -64,7 +64,7 @@ export default function PageTools({
               px={6}
               colorScheme={"red"}
               bg={"blue.400"}
-              _hover={{ bg: "1f5582" }}
+              _hover={{ bg: "#1f5582" }}
             >
               {t("access_tools")}
             </Button>
