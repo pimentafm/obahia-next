@@ -518,8 +518,8 @@ export default function GovernanceContent({ id }: SectionTextProps) {
           especial com o INEMA (órgão gestor), tem possibilitado frequentes
           reuniões para análise metodológica e dos resultados. Publicações foram
           disponibilizadaa em versão impressa e digital e o sistema OBahia
-          (localhost) tem sido uma fonte de consulta permanente e é de acesso
-          livre.
+          (obahia.dea.ufv.br) tem sido uma fonte de consulta permanente e é de
+          acesso livre.
         </Text>
 
         <Text
