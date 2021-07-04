@@ -15,8 +15,8 @@ export const SEO = ({
   description = "Inteligência Territorial e Hídrica para o Oeste da Bahia",
   keywords = "OBahia, Land use change, Water resources",
   title = "OBahia",
-  ogImage = "public/images/meta.png",
-  ogUrl = "public/images/meta.png",
+  ogImage = "images/meta.png",
+  ogUrl = "images/meta.png",
   twitterImage = "",
 }: SEOProps) => {
   return (

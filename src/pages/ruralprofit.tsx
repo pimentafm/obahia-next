@@ -73,7 +73,7 @@ export default function RuralProfitability() {
                 bg: "blue.500",
               }}
             >
-              Saiba mais
+              {t("button_knowmore")}
             </Button>
           </Flex>
         </MotionFlex>

@@ -18,59 +18,64 @@ export default function Governance() {
   return (
     <Flex direction="column" justifyContent="center">
       <Header />
-      <MotionFlex
+      <Flex
         direction="column"
-        w="100%"
-        h="100vh"
-        my="auto"
-        mx="auto"
-        px="6"
-        justify="center"
-        textAlign="center"
-        alignItems="center"
-        transition={{
-          type: "spring",
-          damping: 20,
-          stiffness: 100,
-        }}
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        bgImage="/images/image03.png"
+        bgImage="/images/image01.png"
         bgPosition="center"
         bgRepeat="no-repeat"
         bgAttachment="fixed"
         bgSize="cover"
       >
-        <Logo />
-
-        <Heading
-          py={6}
-          fontWeight={600}
-          fontSize={{ base: "2xl", sm: "4xl", md: "5xl" }}
-          lineHeight={"110%"}
-          color="white"
+        <MotionFlex
+          direction="column"
+          w="100%"
+          h="100vh"
+          my="auto"
+          mx="auto"
+          px="6"
+          justify="center"
+          textAlign="center"
+          alignItems="center"
+          transition={{
+            type: "spring",
+            damping: 20,
+            stiffness: 100,
+          }}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
         >
-          {t("tool_governance")}
-        </Heading>
-
-        <Flex direction={{ base: "column", sm: "row", md: "row" }}>
-          <Button
-            m="10px"
-            as="a"
-            w="200px"
-            href="#startText"
-            colorScheme={"blue"}
-            bg={"#1f5582"}
-            rounded={"full"}
-            px={6}
-            _hover={{
-              bg: "blue.500",
-            }}
+          <Logo color="white" />
+          <Heading
+            py={6}
+            fontWeight={600}
+            fontSize={{ base: "2xl", sm: "4xl", md: "5xl" }}
+            lineHeight={"110%"}
+            color="white"
           >
-            Saiba mais
-          </Button>
-        </Flex>
-      </MotionFlex>
+            {t("tool_governance")}
+          </Heading>
+
+          <Flex direction={{ base: "column", sm: "row", md: "row" }}>
+            <Button
+              m="10px"
+              as="a"
+              w="200px"
+              href="#startText"
+              colorScheme={"blue"}
+              bg={"#1f5582"}
+              rounded={"full"}
+              px={6}
+              _hover={{
+                bg: "blue.500",
+              }}
+            >
+              {t("button_knowmore")}
+            </Button>
+          </Flex>
+        </MotionFlex>
+      </Flex>
 
       <GovernanceContent id="startText" />
 

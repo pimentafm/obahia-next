@@ -9,7 +9,11 @@ const MotionFlex = motion(Flex);
 
 import Footer from "../components/Footer";
 
+import useTranslation from "next-translate/useTranslation";
+
 export default function Info() {
+  const { t } = useTranslation("common");
+
   return (
     <Fade in={true}>
       <Header />
@@ -17,7 +21,7 @@ export default function Info() {
         direction="column"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        bgImage="/images/image03.png"
+        bgImage="/images/image02.png"
         bgPosition="center"
         bgRepeat="no-repeat"
         bgAttachment="fixed"
@@ -51,7 +55,7 @@ export default function Info() {
             lineHeight={"110%"}
             color="white"
           >
-            Text here
+            {t("principal")} <br />
           </Heading>
 
           <Flex direction={{ base: "column", sm: "row", md: "row" }}>
@@ -68,7 +72,7 @@ export default function Info() {
                 bg: "blue.500",
               }}
             >
-              Saiba mais
+              {t("button_knowmore")}
             </Button>
           </Flex>
         </MotionFlex>
