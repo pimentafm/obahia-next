@@ -42,7 +42,7 @@ export default function Home() {
         bgAttachment="fixed"
         bgSize="cover"
       >
-        <Logo />
+        <Logo color="white" />
 
         <Heading
           py={6}

@@ -17,24 +17,24 @@ export default class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="https://obahia.tech/images/apple-touch-icon.png"
+            href="https://obahia.dea.ufv.br/images/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="https://obahia.tech/images/favicon-32x32.png"
+            href="https://obahia.dea.ufv.br/images/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="https://obahia.tech/images/favicon-16x16.png"
+            href="https://obahia.dea.ufv.br/images/favicon-16x16.png"
           />
           <link rel="manifest" href="/site.webmanifest" />
           <link
             rel="mask-icon"
-            href="https://obahia.tech/images/safari-pinned-tab.svg"
+            href="https://obahia.dea.ufv.br/images/safari-pinned-tab.svg"
             color="#181b23"
           />
 
@@ -51,7 +51,7 @@ export default class MyDocument extends Document {
             content="Geoprocessing and Remote Sensing for Agriculture"
           />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://obahia.tech/" />
+          <meta property="og:url" content="https://obahia.dea.ufv.br/" />
           <meta property="og:title" content="obahia Smart Agriculture" />
           <meta
             property="og:description"
@@ -59,11 +59,11 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://obahia.tech/images/meta.png"
+            content="https://obahia.dea.ufv.br/images/meta.png"
           />
 
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://obahia.tech/" />
+          <meta property="twitter:url" content="https://obahia.dea.ufv.br/" />
           <meta name="twitter:creator" content="@fern_pimenta" />
           <meta property="twitter:title" content="obahia Smart Agriculture" />
           <meta
@@ -72,7 +72,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="twitter:image"
-            content="https://obahia.tech/images/meta.png"
+            content="https://obahia.dea.ufv.br/images/meta.png"
           />
 
           <meta name="apple-mobile-web-app-title" content="obahia" />

@@ -9,6 +9,8 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 
+import { Logo } from "../components/Logo";
+
 export const NotFound = () => {
   return (
     <Flex align={"center"} justify={"center"} h={"100vh"} w={"full"}>
@@ -23,7 +25,7 @@ export const NotFound = () => {
         textAlign={"center"}
         boxShadow="2xl"
       >
-        <Image src="/images/logo.svg" boxSize="100px" />
+        <Logo height="50px" />
 
         <Stack spacing={2}>
           <Heading>Page not found</Heading>
