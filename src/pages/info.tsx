@@ -9,7 +9,7 @@ const MotionFlex = motion(Flex);
 
 import Footer from "../components/Footer";
 
-export default function About() {
+export default function Info() {
   return (
     <Fade in={true}>
       <Header />
