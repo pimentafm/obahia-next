@@ -60,7 +60,7 @@ export default function PageTools({
               rounded={"full"}
               size={"lg"}
               fontWeight={"normal"}
-              minW="200px"
+              minW="150px"
               px={6}
               colorScheme={"red"}
               bg={"blue.400"}
