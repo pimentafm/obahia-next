@@ -46,7 +46,7 @@ export default function Governance() {
         <Heading
           py={6}
           fontWeight={600}
-          fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+          fontSize={{ base: "2xl", sm: "4xl", md: "5xl" }}
           lineHeight={"110%"}
           color="white"
         >

@@ -19,21 +19,8 @@ export default function Home() {
   return (
     <Flex direction="column" justifyContent="center">
       <Header />
-      <MotionFlex
+      <Flex
         direction="column"
-        w="100%"
-        h="100vh"
-        my="auto"
-        mx="auto"
-        px="6"
-        justify="center"
-        textAlign="center"
-        alignItems="center"
-        transition={{
-          type: "spring",
-          damping: 20,
-          stiffness: 100,
-        }}
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         bgImage="/images/image01.png"
@@ -42,68 +29,88 @@ export default function Home() {
         bgAttachment="fixed"
         bgSize="cover"
       >
-        <Logo color="white" />
-
-        <Heading
-          py={6}
-          fontWeight={600}
-          fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
-          lineHeight={"110%"}
-          color="white"
+        <MotionFlex
+          direction="column"
+          w="100%"
+          h="100vh"
+          my="auto"
+          mx="auto"
+          px="6"
+          justify="center"
+          textAlign="center"
+          alignItems="center"
+          transition={{
+            type: "spring",
+            damping: 20,
+            stiffness: 100,
+          }}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
         >
-          {t("principal")} <br />
-        </Heading>
+          <Logo color="white" />
 
-        <Flex direction={{ base: "column", sm: "row", md: "row" }}>
-          <Button
-            m="10px"
-            as="a"
-            w="200px"
-            href="#tools"
-            colorScheme={"blue"}
-            bg={"#1f5582"}
-            rounded={"full"}
-            px={6}
-            _hover={{
-              bg: "blue.500",
-            }}
+          <Heading
+            py={6}
+            fontWeight={600}
+            maxW={800}
+            fontSize={{ base: "2xl", sm: "4xl", md: "5xl" }}
+            lineHeight={"110%"}
+            color="white"
           >
-            {t("menu_tools")}
-          </Button>
+            {t("principal")} <br />
+          </Heading>
 
-          <Button
-            m="10px"
-            as="a"
-            w="200px"
-            href="#services"
-            colorScheme={"blue"}
-            bg={"#1f5582"}
-            rounded={"full"}
-            px={6}
-            _hover={{
-              bg: "blue.500",
-            }}
-          >
-            {t("menu_info")}
-          </Button>
+          <Flex direction={{ base: "column", sm: "row", md: "row" }}>
+            <Button
+              m="10px"
+              as="a"
+              w="200px"
+              href="#tools"
+              colorScheme={"blue"}
+              bg={"#1f5582"}
+              rounded={"full"}
+              px={6}
+              _hover={{
+                bg: "blue.500",
+              }}
+            >
+              {t("menu_tools")}
+            </Button>
 
-          <Button
-            m="10px"
-            as="a"
-            w="200px"
-            href="about"
-            colorScheme={"blue"}
-            bg={"#1f5582"}
-            rounded={"full"}
-            px={6}
-            _hover={{
-              bg: "blue.500",
-            }}
-          >
-            {t("menu_about")}
-          </Button>
-        </Flex>
-      </MotionFlex>
+            <Button
+              m="10px"
+              as="a"
+              w="200px"
+              href="#services"
+              colorScheme={"blue"}
+              bg={"#1f5582"}
+              rounded={"full"}
+              px={6}
+              _hover={{
+                bg: "blue.500",
+              }}
+            >
+              {t("menu_info")}
+            </Button>
+
+            <Button
+              m="10px"
+              as="a"
+              w="200px"
+              href="about"
+              colorScheme={"blue"}
+              bg={"#1f5582"}
+              rounded={"full"}
+              px={6}
+              _hover={{
+                bg: "blue.500",
+              }}
+            >
+              {t("menu_about")}
+            </Button>
+          </Flex>
+        </MotionFlex>
+      </Flex>
 
       <PageTools
         id="tools"

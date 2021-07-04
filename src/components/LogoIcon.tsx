@@ -9,82 +9,74 @@ export const LogoIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g id="g2132" fill="#1f5582">
-        <g
-          id="g2064"
-          transform="translate(-81.079 -74.176)"
-          stroke-width=".261"
-        >
+        <g id="g2064" transform="translate(-81.079 -74.176)" strokeWidth=".261">
           <path id="path2056" d="m81.079 92.13 14.735 2.6831 2.6371-2.6831z" />
           <g
             id="g2060"
             transform="translate(39.833,-5.4193)"
-            fill-opacity=".7451"
+            fillOpacity=".7451"
           >
             <path
               id="path2058"
               d="m41.246 97.347 14.735-2.6831 2.6371 2.6831z"
               fill="#1f5582"
-              fill-opacity=".7451"
-              stroke-width=".261"
+              fillOpacity=".7451"
+              strokeWidth=".261"
             />
           </g>
           <path
             id="path2062"
             d="m98.582 74.425-2.6831 14.735 2.6831 2.6371z"
-            fill-opacity=".39216"
+            fillOpacity=".39216"
           />
         </g>
         <g
           id="g2068"
           transform="rotate(90 78.023 37.023)"
-          fill-opacity=".078431"
+          fillOpacity=".078431"
         >
           <path
             id="path2066"
             d="m41.246 97.347 14.735-2.6831 2.6371 2.6831z"
             fill="#1f5582"
-            fill-opacity=".078431"
+            fillOpacity=".078431"
           />
         </g>
-        <g
-          id="g2082"
-          transform="translate(-81.079 -74.176)"
-          stroke-width=".261"
-        >
+        <g id="g2082" transform="translate(-81.079 -74.176)" strokeWidth=".261">
           <path
             id="path2070"
             d="m116.29 91.93-14.735-2.6831-2.6371 2.6831z"
-            fill-opacity=".39216"
+            fillOpacity=".39216"
           />
           <g
             id="g2074"
             transform="rotate(180,78.766,94.738)"
-            fill-opacity=".078431"
+            fillOpacity=".078431"
           >
             <path
               id="path2072"
               d="m41.246 97.347 14.735-2.6831 2.6371 2.6831z"
               fill="#1f5582"
-              fill-opacity=".078431"
-              stroke-width=".261"
+              fillOpacity=".078431"
+              strokeWidth=".261"
             />
           </g>
           <path
             id="path2076"
             d="m98.783 109.63 2.6831-14.735-2.6831-2.6372z"
-            fill-opacity=".39216"
+            fillOpacity=".39216"
           />
           <g
             id="g2080"
             transform="rotate(-90,76.056,74.817)"
-            fill-opacity=".078431"
+            fillOpacity=".078431"
           >
             <path
               id="path2078"
               d="m41.246 97.347 14.735-2.6831 2.6371 2.6831z"
               fill="#1f5582"
-              fill-opacity=".078431"
-              stroke-width=".261"
+              fillOpacity=".078431"
+              strokeWidth=".261"
             />
           </g>
         </g>
