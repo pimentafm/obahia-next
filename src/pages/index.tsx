@@ -74,7 +74,7 @@ export default function Home() {
                 bg: "blue.500",
               }}
             >
-              {t("menu_tools")}
+              {t("button_tools")}
             </Button>
 
             <Button

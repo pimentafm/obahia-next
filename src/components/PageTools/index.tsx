@@ -10,6 +10,8 @@ import {
   createIcon,
 } from "@chakra-ui/react";
 
+import useTranslation from "next-translate/useTranslation";
+
 type PageToolsProps = {
   id?: string;
   title: string;
@@ -27,6 +29,8 @@ export default function PageTools({
   toolURL,
   videoURL,
 }: PageToolsProps) {
+  const { t } = useTranslation("common");
+
   return (
     <Container id={id} maxW={"7xl"}>
       <Stack
@@ -62,7 +66,7 @@ export default function PageTools({
               bg={"blue.400"}
               _hover={{ bg: "1f5582" }}
             >
-              Acesse a ferramenta
+              {t("access_tools")}
             </Button>
             <Button
               as="a"
@@ -74,7 +78,7 @@ export default function PageTools({
               px={6}
               leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
             >
-              Acesse o tutorial
+              {t("access_tutorial")}
             </Button>
           </Stack>
         </Stack>

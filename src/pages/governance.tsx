@@ -50,9 +50,7 @@ export default function Governance() {
           lineHeight={"110%"}
           color="white"
         >
-          Resumo das ações de governança, mapas para visualização de
-          estatísticas municipais de variáveis agrícolas e download de mapas
-          anuais da Produção Agrícola Municipal em formato SIG
+          {t("tool_governance")}
         </Heading>
 
         <Flex direction={{ base: "column", sm: "row", md: "row" }}>

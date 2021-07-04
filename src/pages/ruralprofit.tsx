@@ -56,8 +56,7 @@ export default function RuralProfitability() {
             lineHeight={"110%"}
             color="white"
           >
-            Modelo de otimização econômica da atividade agrícola considerando o
-            regime hídrico e disponibilidade de outorga regional
+            {t("tool_profit")}
           </Heading>
 
           <Flex direction={{ base: "column", sm: "row", md: "row" }}>

@@ -1,7 +1,9 @@
 {
   "principal": "Territorial and Water Intelligence for Western Bahia",
   "menu_home": "Home",
-  "menu_tools": "Access the tools",
+  "button_tools": "Access the tools",
+  "access_tools": "Access the tool",
+  "access_tutorial": "Access the tutorial",
   "menu_about": "About project",
   "menu_info": "Aditional informations",
   "title_tool_mapserver": "Map server",
@@ -17,5 +19,14 @@
   "tool_flow": "Visualization of the water stress status in telemetric stations in Western Bahia region.",
   "tool_modflow": "Customized visualization of groundwater model results for the Upper Rio Grande, Middle Rio Grande, Rio Corrente and Rio Carinhanha basins.",
   "tool_profit": "Economic optimization model of agricultural activity considering the water regime and availability of regional grants.",
-  "tool_governance": "Summary of governance actions, maps for visualization of municipal statistics on agricultural variables and download of annual maps of Municipal Agricultural Production in GIS format."
+  "tool_governance": "Summary of governance actions, maps for visualization of municipal statistics on agricultural variables and download of annual maps of Municipal Agricultural Production in GIS format.",
+  "ruralprofit_t1": "1. General description",
+  "ruralprofit_t11": "1.1 Introduction",
+  "ruralprofit_t2": "2. Rural profitability model",
+  "ruralprofit_t21": "2.1 Downloads",
+  "ruralprofit_p1": "A programação linear é um método amplamente utilizado para otimização da atividade agrícola com diversos objetivos. Dentre os principais objetivos, estão a otimização de alocação de água, maximização de benefícios econômicos, melhorar o manejo de irrigação e guiar ações de governança.",
+  "ruralprofit_p2": "Neste modelo de programação linear é proposto uma maximização econômica da atividade agrícola, considerando as respostas dadas pelo modelo de previsão do início da estação chuvosa. Este modelo é possível de ser aplicado em diversos níveis de gestão de água como fazendas, municípios e região.",
+  "ruralprofit_p3": "The rural profitability model and the user manual can be downloaded at following links:",
+  "ruralprofit_model": "Rural profitability model",
+  "ruralprofit_manual": "Rural profitability model manual"
 }
