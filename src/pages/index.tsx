@@ -117,7 +117,7 @@ export default function Home() {
         title={t("title_tool_timeseries")}
         imageSRC="images/timeseries.png"
         content={t("tool_timeseries")}
-        toolURL="http://obahia.dea.ufv.br/landuse"
+        toolURL="http://localhost/landuse"
         videoURL=""
       />
 
@@ -125,7 +125,7 @@ export default function Home() {
         title={t("title_tool_mapserver")}
         imageSRC="images/mapserver.png"
         content={t("tool_mapserver")}
-        toolURL="http://obahia.dea.ufv.br/maps/38/view"
+        toolURL="http://localhost/maps/38/view"
         videoURL=""
       />
 
@@ -133,7 +133,7 @@ export default function Home() {
         title={t("title_tool_onset")}
         imageSRC="images/onset.png"
         content={t("tool_onset")}
-        toolURL="http://obahia.dea.ufv.br/onset"
+        toolURL="http://localhost/onset"
         videoURL=""
       />
 
@@ -141,7 +141,7 @@ export default function Home() {
         title={t("title_tool_flow")}
         imageSRC="images/flow.png"
         content={t("tool_flow")}
-        toolURL="http://obahia.dea.ufv.br/stream"
+        toolURL="http://localhost/stream"
         videoURL=""
       />
 
@@ -149,7 +149,7 @@ export default function Home() {
         title={t("title_tool_modflow")}
         imageSRC="images/mfview.png"
         content={t("tool_modflow")}
-        toolURL="http://obahia.dea.ufv.br/mfview"
+        toolURL="http://localhost/mfview"
         videoURL=""
       />
 

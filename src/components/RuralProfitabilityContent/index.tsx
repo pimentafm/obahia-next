@@ -154,7 +154,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           >
             <ListIcon as={MdCheckCircle} color="green.500" />
             <NextLink
-              href="ftp://obahia.dea.ufv.br/ruralprofitability/ModeloLucratividadeRural.xlsx"
+              href="ftp://localhost/ruralprofitability/ModeloLucratividadeRural.xlsx"
               locale={lang}
             >
               Modelo de Lucratividade Rural
@@ -168,7 +168,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           >
             <ListIcon as={MdCheckCircle} color="green.500" />
             <NextLink
-              href="ftp://obahia.dea.ufv.br/ruralprofitability/Manual_ModeloLucratividadeRural.pdf"
+              href="ftp://localhost/ruralprofitability/Manual_ModeloLucratividadeRural.pdf"
               locale={lang}
             >
               Manual do modelo de Lucratividade Rural

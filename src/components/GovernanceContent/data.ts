@@ -1,211 +1,211 @@
 export const linkdata = [
   {
     name: "População residente estimada - 2020",
-    url: "http://obahia.dea.ufv.br/layers/geonode:popestimada_2020",
+    url: "http://localhost/layers/geonode:popestimada_2020",
   },
   {
     name: "População residente - Censo 2010",
-    url: "http://obahia.dea.ufv.br/layers/geonode:poptotal_censo2010",
+    url: "http://localhost/layers/geonode:poptotal_censo2010",
   },
   {
     name: "Densidade demográfica 2010",
-    url: "http://obahia.dea.ufv.br/layers/geonode:dens_demo",
+    url: "http://localhost/layers/geonode:dens_demo",
   },
   {
     name: "Produto Interno Bruto - 2018",
-    url: "http://obahia.dea.ufv.br/layers/geonode:pib",
+    url: "http://localhost/layers/geonode:pib",
   },
   {
     name: "Produto Interno Bruto per capita - 2018",
-    url: "http://obahia.dea.ufv.br/layers/geonode:pib_percapita",
+    url: "http://localhost/layers/geonode:pib_percapita",
   },
   {
     name: "Índice de Desenvolvimento Humano Municipal - 2010",
-    url: "http://obahia.dea.ufv.br/layers/geonode:idhm",
+    url: "http://localhost/layers/geonode:idhm",
   },
   {
     name: "Área do município",
-    url: "http://obahia.dea.ufv.br/layers/geonode:area",
+    url: "http://localhost/layers/geonode:area",
   },
   {
     name: "Hierarquia urbana",
-    url: "http://obahia.dea.ufv.br/layers/geonode:hierarquia",
+    url: "http://localhost/layers/geonode:hierarquia",
   },
   {
     name: "Região geográfica intermediária",
-    url: "http://obahia.dea.ufv.br/layers/geonode:regiaointermediaria",
+    url: "http://localhost/layers/geonode:regiaointermediaria",
   },
   {
     name: "Região geográfica imediata",
-    url: "http://obahia.dea.ufv.br/layers/geonode:regiaoimediata",
+    url: "http://localhost/layers/geonode:regiaoimediata",
   },
   {
     name: "Mesoregião",
-    url: "http://obahia.dea.ufv.br/layers/geonode:mesorregiao",
+    url: "http://localhost/layers/geonode:mesorregiao",
   },
   {
     name: "Microrregião",
-    url: "http://obahia.dea.ufv.br/layers/geonode:microrregiao",
+    url: "http://localhost/layers/geonode:microrregiao",
   },
   {
     name: "Regiões de influência",
-    url: "http://obahia.dea.ufv.br/layers/geonode:regioes_influencia",
+    url: "http://localhost/layers/geonode:regioes_influencia",
   },
   {
     name: "Estabelecimentos Agropecuários",
-    url: "http://obahia.dea.ufv.br/layers/geonode:munagro_estabelecimento",
+    url: "http://localhost/layers/geonode:munagro_estabelecimento",
   },
   {
     name: "Área média",
-    url: "http://obahia.dea.ufv.br/layers/geonode:munagro_areamedia",
+    url: "http://localhost/layers/geonode:munagro_areamedia",
   },
   {
     name: "Pessoal Ocupado / Estabelecimento ",
-    url: "http://obahia.dea.ufv.br/layers/geonode:munagro_pessoaleestabelecimento",
+    url: "http://localhost/layers/geonode:munagro_pessoaleestabelecimento",
   },
   {
     name: "Área lavoura / Adubadeira",
-    url: "http://obahia.dea.ufv.br/layers/geonode:arealavoura_adubadeira",
+    url: "http://localhost/layers/geonode:arealavoura_adubadeira",
   },
   {
     name: "Área lavoura / Colheitadeira",
-    url: "http://obahia.dea.ufv.br/layers/geonode:arealavoura_colheitadeira",
+    url: "http://localhost/layers/geonode:arealavoura_colheitadeira",
   },
   {
     name: "Área lavoura / Semeadeira",
-    url: "http://obahia.dea.ufv.br/layers/geonode:arealavoura_semeadeira",
+    url: "http://localhost/layers/geonode:arealavoura_semeadeira",
   },
   {
     name: "Área lavoura / Trator",
-    url: "http://obahia.dea.ufv.br/layers/geonode:arealavoura_trator",
+    url: "http://localhost/layers/geonode:arealavoura_trator",
   },
   {
     name: "Atividade Econômica - Lavoura Temporária",
-    url: "http://obahia.dea.ufv.br/layers/geonode:ativecon_lavouratemporaria",
+    url: "http://localhost/layers/geonode:ativecon_lavouratemporaria",
   },
   {
     name: "Atividade Econômica - Lavoura Permanente",
-    url: "http://obahia.dea.ufv.br/layers/geonode:ativecon_lavourapermanente",
+    url: "http://localhost/layers/geonode:ativecon_lavourapermanente",
   },
   {
     name: "Atividade Econômica - Pecuária",
-    url: "http://obahia.dea.ufv.br/layers/geonode:ativecon_pecuaria_1",
+    url: "http://localhost/layers/geonode:ativecon_pecuaria_1",
   },
   {
     name: "Atividade Econômica - Horticultura & Floricultura",
-    url: "http://obahia.dea.ufv.br/layers/geonode:ativecon_hortiflori",
+    url: "http://localhost/layers/geonode:ativecon_hortiflori",
   },
   {
     name: "Atividade Econômica - Sementes & Mudas",
-    url: "http://obahia.dea.ufv.br/layers/geonode:ativecon_sementesmudas",
+    url: "http://localhost/layers/geonode:ativecon_sementesmudas",
   },
   {
     name: "Atividade Econômica - Produção Florestal",
-    url: "http://obahia.dea.ufv.br/layers/geonode:ativecon_producaoflorestal",
+    url: "http://localhost/layers/geonode:ativecon_producaoflorestal",
   },
   {
     name: "Atividade Econômica - Pesca",
-    url: "http://obahia.dea.ufv.br/layers/geonode:ativecon_pesca",
+    url: "http://localhost/layers/geonode:ativecon_pesca",
   },
   {
     name: "Atividade Econômica - Aquicultura",
-    url: "http://obahia.dea.ufv.br/layers/geonode:ativecon_aquicultura",
+    url: "http://localhost/layers/geonode:ativecon_aquicultura",
   },
   {
     name: "Uso das terras - Lavoura",
-    url: "http://obahia.dea.ufv.br/layers/geonode:usodasterras_lavoura",
+    url: "http://localhost/layers/geonode:usodasterras_lavoura",
   },
   {
     name: "Uso das terras - Pastagem",
-    url: "http://obahia.dea.ufv.br/layers/geonode:usodasterras_pastagem",
+    url: "http://localhost/layers/geonode:usodasterras_pastagem",
   },
   {
     name: "Aves - Corte",
-    url: "http://obahia.dea.ufv.br/layers/geonode:aves_corte",
+    url: "http://localhost/layers/geonode:aves_corte",
   },
   {
     name: "Aves - Ovos",
-    url: "http://obahia.dea.ufv.br/layers/geonode:aves_ovos",
+    url: "http://localhost/layers/geonode:aves_ovos",
   },
   {
     name: "Bovinos - Corte",
-    url: "http://obahia.dea.ufv.br/layers/geonode:bovinos_corte",
+    url: "http://localhost/layers/geonode:bovinos_corte",
   },
   {
     name: "Bovinos - Leite",
-    url: "http://obahia.dea.ufv.br/layers/geonode:bovinos_leite",
+    url: "http://localhost/layers/geonode:bovinos_leite",
   },
   {
     name: "Rendimento - Arroz",
-    url: "http://obahia.dea.ufv.br/layers/geonode:rendimento_arroz",
+    url: "http://localhost/layers/geonode:rendimento_arroz",
   },
   {
     name: "Rendimento - Cana",
-    url: "http://obahia.dea.ufv.br/layers/geonode:rendimento_cana",
+    url: "http://localhost/layers/geonode:rendimento_cana",
   },
   {
     name: "Rendimento - Mandioca",
-    url: "http://obahia.dea.ufv.br/layers/geonode:rendimento_mandioca",
+    url: "http://localhost/layers/geonode:rendimento_mandioca",
   },
   {
     name: "Rendimento - Milho",
-    url: "http://obahia.dea.ufv.br/layers/geonode:rendimento_milho",
+    url: "http://localhost/layers/geonode:rendimento_milho",
   },
   {
     name: "Rendimento - Soja",
-    url: "http://obahia.dea.ufv.br/layers/geonode:rendimento_soja",
+    url: "http://localhost/layers/geonode:rendimento_soja",
   },
   {
     name: "Rendimento - Trigo",
-    url: "http://obahia.dea.ufv.br/layers/geonode:rendimento_trigo",
+    url: "http://localhost/layers/geonode:rendimento_trigo",
   },
   {
     name: "Rendimento - Cacau",
-    url: "http://obahia.dea.ufv.br/layers/geonode:rendimento_cacau",
+    url: "http://localhost/layers/geonode:rendimento_cacau",
   },
   {
     name: "Rendimento - Café",
-    url: "http://obahia.dea.ufv.br/layers/geonode:rendimento_cafe",
+    url: "http://localhost/layers/geonode:rendimento_cafe",
   },
   {
     name: "Rendimento - Laranja",
-    url: "http://obahia.dea.ufv.br/layers/geonode:rendimento_laranja",
+    url: "http://localhost/layers/geonode:rendimento_laranja",
   },
   {
     name: "Rendimento - Uva",
-    url: "http://obahia.dea.ufv.br/layers/geonode:rendimento_uva",
+    url: "http://localhost/layers/geonode:rendimento_uva",
   },
   {
     name: "Carga de Bovinos",
-    url: "http://obahia.dea.ufv.br/layers/geonode:cargabovinos",
+    url: "http://localhost/layers/geonode:cargabovinos",
   },
   {
     name: "Cisterna",
-    url: "http://obahia.dea.ufv.br/layers/geonode:cisterna",
+    url: "http://localhost/layers/geonode:cisterna",
   },
   {
     name: "Utilização de Agrotóxicos",
-    url: "http://obahia.dea.ufv.br/layers/geonode:utilizacao_agrotoxicos",
+    url: "http://localhost/layers/geonode:utilizacao_agrotoxicos",
   },
   {
     name: "Despesa com Agrotóxicos",
-    url: "http://obahia.dea.ufv.br/layers/geonode:despesa_agrotoxicos",
+    url: "http://localhost/layers/geonode:despesa_agrotoxicos",
   },
   {
     name: "Uso de irrigação",
-    url: "http://obahia.dea.ufv.br/layers/geonode:munagro_usoirrigacao",
+    url: "http://localhost/layers/geonode:munagro_usoirrigacao",
   },
   {
     name: "Assistência Técnica",
-    url: "http://obahia.dea.ufv.br/layers/geonode:munagro_assistecnica",
+    url: "http://localhost/layers/geonode:munagro_assistecnica",
   },
   {
     name: "Agricultura familiar",
-    url: "http://obahia.dea.ufv.br/layers/geonode:munagro_agrifamiliar",
+    url: "http://localhost/layers/geonode:munagro_agrifamiliar",
   },
   {
     name: "Produtor com escolaridade até Ensino Fundamental",
-    url: "http://obahia.dea.ufv.br/layers/geonode:produtor_ateensfundamental",
+    url: "http://localhost/layers/geonode:produtor_ateensfundamental",
   },
 ];
 
