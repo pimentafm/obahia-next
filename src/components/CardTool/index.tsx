@@ -1,7 +1,6 @@
 import { Heading, Box, Text, Icon } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 interface CardToolProps {
-  id?: string;
   title: string;
   content: string;
 }
@@ -10,10 +9,9 @@ import { GiEarthAmerica } from "react-icons/gi";
 
 const MotionBox = motion(Box);
 
-export default function CardTool({ id, title, content }: CardToolProps) {
+export default function CardTool({ title, content }: CardToolProps) {
   return (
     <MotionBox
-      id={id}
       maxW={300}
       bg="blue.700"
       boxShadow={"xl"}

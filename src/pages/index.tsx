@@ -113,6 +113,8 @@ export default function Home() {
       </Flex>
 
       <MotionFlex
+        id="tools"
+        name="tools"
         h={[null, null, null, "100vh"]}
         p={6}
         justify="center"
@@ -128,7 +130,6 @@ export default function Home() {
       >
         <SimpleGrid flex="1" gap="4" minChildWidth="320px" align="flex-start">
           <CardTool
-            id="tools"
             title="Servidor de Mapas"
             content="Visualização e análise customizada das bases de dados contidas
               nessa plataforma."
