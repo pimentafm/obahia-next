@@ -1,5 +1,5 @@
 import { ElementType } from "react";
-import { Heading, Box, Text, Icon, Link } from "@chakra-ui/react";
+import { Heading, Box, Text, IconButton, Icon, Link } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 interface CardToolProps {
   icon: ElementType;
@@ -30,21 +30,15 @@ export default function CardTool({ icon, title, content, url }: CardToolProps) {
       animate={{ scale: 1, opacity: 1 }}
     >
       <Link href={url} _focus={{ outline: 0 }}>
-        <Icon
-          as={icon}
-          w={12}
-          h={12}
+        <IconButton
+          aria-label={title}
+          w={14}
+          h={14}
           m={2}
-          color={"white"}
-          bgGradient="linear(to-br, #67b3f3 0%,
-          #1f5582 40%,
-          rgba(0, 0, 0, 0.28) 60%)"
-          rounded="50%"
-          _hover={{
-            transition: "all 0.3s ease",
-            bgGradient:
-              "linear(to-tl, #67b3f3 0%, #1f5582 40%, rgba(0, 0, 0, 0.28) 60%);",
-          }}
+          bg="blue.800"
+          colorScheme="blue"
+          icon={<Icon as={icon} w={12} h={12} color="white" />}
+          isRound
         />
       </Link>
 
@@ -56,4 +50,23 @@ export default function CardTool({ icon, title, content, url }: CardToolProps) {
       </Text>
     </MotionBox>
   );
+}
+
+{
+  /* <Icon
+as={icon}
+w={12}
+h={12}
+m={2}
+color={"white"}
+bgGradient="linear(to-br, #67b3f3 0%,
+#1f5582 40%,
+rgba(0, 0, 0, 0.28) 60%)"
+rounded="50%"
+_hover={{
+  transition: "background 3s",
+  bgGradient:
+    "linear(to-tl, #67b3f3 0%, #1f5582 40%, rgba(0, 0, 0, 0.28) 60%);",
+}}
+/> */
 }
