@@ -1,5 +1,13 @@
 import { ElementType } from "react";
-import { Heading, Box, Text, IconButton, Icon, Link } from "@chakra-ui/react";
+import {
+  Heading,
+  Box,
+  Text,
+  IconButton,
+  Icon,
+  Link,
+  Tooltip,
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 interface CardToolProps {
   icon: ElementType;
@@ -37,16 +45,26 @@ export default function CardTool({ icon, title, content, url }: CardToolProps) {
       animate={{ scale: 1, opacity: 1 }}
     >
       <Link href={url} _focus={{ outline: 0 }}>
-        <IconButton
+        <Tooltip
+          label={title}
           aria-label={title}
-          w={14}
-          h={14}
-          m={2}
+          hasArrow
           bg="blue.800"
-          colorScheme="blue"
-          icon={<Icon as={icon} w={12} h={12} color="white" />}
-          isRound
-        />
+          color="white"
+          placement="top"
+          maxW="200px"
+        >
+          <IconButton
+            aria-label={title}
+            w={14}
+            h={14}
+            m={2}
+            bg="blue.800"
+            colorScheme="blue"
+            icon={<Icon as={icon} w={12} h={12} color="white" />}
+            isRound
+          />
+        </Tooltip>
       </Link>
 
       <Heading
