@@ -1,5 +1,16 @@
 import { Flex, Heading, Button, SimpleGrid, Box } from "@chakra-ui/react";
 
+import {
+  GiStack,
+  GiRaining,
+  GiMeshBall,
+  GiEarthAmerica,
+  GiMoneyStack,
+  GiShakingHands,
+} from "react-icons/gi";
+
+import { MdTrendingDown } from "react-icons/md";
+
 import { motion } from "framer-motion";
 
 import { Header } from "../components/Header";
@@ -129,43 +140,63 @@ export default function Home() {
       >
         <SimpleGrid flex="1" gap="4" minChildWidth="320px" align="flex-start">
           <CardTool
+            icon={GiEarthAmerica}
             title="Servidor de Mapas"
             content="Visualização e análise customizada das bases de dados contidas
               nessa plataforma."
+            url="http://obahia.dea.ufv.br/maps/38/view"
           />
 
           <CardTool
-            title="Servidor de Mapas"
-            content="Visualização e análise customizada das bases de dados contidas
-              nessa plataforma."
+            icon={GiStack}
+            title="Séries temporais de Mapas"
+            content="Visualização e análise customizada das séries temporais de mapas a
+            nível regional, bacia hidrográfica, áreas de drenagem e municipal
+            para a região do Oeste da Bahia."
+            url="http://obahia.dea.ufv.br/landuse"
           />
 
           <CardTool
-            title="Servidor de Mapas"
-            content="Visualização e análise customizada das bases de dados contidas
-              nessa plataforma."
+            icon={GiRaining}
+            title="Previsão de Vazões Mínimas e Estresse Hídrico"
+            content="Visualização customizada da previsão do início das chuvas para o
+            Oeste da Bahia, conforme previsto pelo sistema de previsão
+            climática CFSv2 do NCEP/NOAA."
+            url="http://obahia.dea.ufv.br/onset"
           />
 
           <CardTool
-            title="Servidor de Mapas"
-            content="Visualização e análise customizada das bases de dados contidas
-              nessa plataforma."
+            icon={MdTrendingDown}
+            title="Previsão de Vazões Mínimas e Estresse Hídrico"
+            content="Visualização do status de estresse hídrico nas estações
+            telemétricas para a região do Oeste da Bahia."
+            url="http://obahia.dea.ufv.br/stream"
           />
 
           <CardTool
-            title="Servidor de Mapas"
-            content="Visualização e análise customizada das bases de dados contidas
-              nessa plataforma."
+            icon={GiMeshBall}
+            title="Visualização de Dados do Modelo de Águas Subterrâneas"
+            content="Visualização customizada dos resultados do modelo de águas
+            subterrâneas para as bacias do Alto Rio Grande, Médio Rio Grande,
+            Rio Corrente e Rio Carinhanha."
+            url="http://obahia.dea.ufv.br/mfview"
           />
+
           <CardTool
-            title="Servidor de Mapas"
-            content="Visualização e análise customizada das bases de dados contidas
-              nessa plataforma."
+            icon={GiMoneyStack}
+            title="Lucratividade Rural"
+            content="Modelo de otimização econômica da atividade agrícola considerando
+            o regime hídrico e disponibilidade de outorga regional."
+            url=""
           />
+
           <CardTool
-            title="Servidor de Mapas"
-            content="Visualização e análise customizada das bases de dados contidas
-              nessa plataforma."
+            icon={GiShakingHands}
+            title="Governança"
+            content="Resumo das ações de governança, mapas para visualização de
+            estatísticas municipais de variáveis agrícolas e download de mapas
+            anuais da Produção Agrícola Municipal em formato SIG."
+            url=""
           />
         </SimpleGrid>
       </MotionFlex>
