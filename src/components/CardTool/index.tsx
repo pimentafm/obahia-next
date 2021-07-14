@@ -48,10 +48,10 @@ export default function CardTool({ icon, title, content, url }: CardToolProps) {
         />
       </Link>
 
-      <Heading pb={2} fontSize={"xl"} color={"gray.300"} fontFamily={"body"}>
+      <Heading mb={4} fontSize={"xl"} color={"gray.100"} fontFamily={"body"}>
         {title}
       </Heading>
-      <Text textAlign={"justify"} color="white" px={2}>
+      <Text mt={2} textAlign={"center"} color="white" px={2}>
         {content}
       </Text>
     </MotionBox>
