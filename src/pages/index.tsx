@@ -125,7 +125,7 @@ export default function Home() {
 
       <MotionFlex
         id="tools"
-        h={[null, null, null, "100vh"]}
+        h={["100vh", "100vh", "100vh", "100vh"]}
         p={6}
         justify="center"
         textAlign="center"
@@ -141,7 +141,12 @@ export default function Home() {
         <SimpleGrid
           flex="1"
           gap="4"
-          minChildWidth="320px"
+          minChildWidth={{
+            base: "100px",
+            sm: "100px",
+            md: "320px",
+            lg: "320px",
+          }}
           spacingY={10}
           align="flex-start"
         >

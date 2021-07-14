@@ -19,6 +19,13 @@ export default function CardTool({ icon, title, content, url }: CardToolProps) {
       rounded={"lg"}
       p={4}
       mx="auto"
+      minW={{
+        base: "50px",
+        sm: "100px",
+        md: "320px",
+        lg: "320px",
+        xl: "320px",
+      }}
       textAlign={"center"}
       whileHover={{ scale: 1.1 }}
       transition={{
@@ -42,31 +49,36 @@ export default function CardTool({ icon, title, content, url }: CardToolProps) {
         />
       </Link>
 
-      <Heading mb={4} fontSize={"xl"} color={"gray.100"} fontFamily={"body"}>
+      <Heading
+        display={{
+          base: "none",
+          sm: "none",
+          md: "block",
+          lg: "block",
+          xl: "block",
+        }}
+        mb={4}
+        fontSize={"xl"}
+        color={"gray.100"}
+        fontFamily={"body"}
+      >
         {title}
       </Heading>
-      <Text mt={2} textAlign={"center"} color="white" px={2}>
+      <Text
+        display={{
+          base: "none",
+          sm: "none",
+          md: "none",
+          lg: "none",
+          xl: "block",
+        }}
+        mt={2}
+        textAlign={"center"}
+        color="white"
+        px={2}
+      >
         {content}
       </Text>
     </MotionBox>
   );
-}
-
-{
-  /* <Icon
-as={icon}
-w={12}
-h={12}
-m={2}
-color={"white"}
-bgGradient="linear(to-br, #67b3f3 0%,
-#1f5582 40%,
-rgba(0, 0, 0, 0.28) 60%)"
-rounded="50%"
-_hover={{
-  transition: "background 3s",
-  bgGradient:
-    "linear(to-tl, #67b3f3 0%, #1f5582 40%, rgba(0, 0, 0, 0.28) 60%);",
-}}
-/> */
 }
