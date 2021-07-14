@@ -3,7 +3,7 @@ type LogoProps = {
   height?: string;
 };
 
-export const Logo = ({ color = "#1f5582", height = "80px" }: LogoProps) => {
+export const Logo = ({ color = "blue.700", height = "80px" }: LogoProps) => {
   return (
     <svg
       height={height}

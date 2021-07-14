@@ -57,7 +57,7 @@ export default function SmallCentered() {
   const year = getYear(Date.now());
 
   return (
-    <Box bg="#1f5582" color="white">
+    <Box bg="blue.700" color="white">
       <Container
         as={Stack}
         maxW={"6xl"}

@@ -64,7 +64,7 @@ export default function Governance() {
               w="200px"
               href="#startText"
               colorScheme={"blue"}
-              bg={"#1f5582"}
+              bg={"blue.700"}
               rounded={"full"}
               px={6}
               _hover={{

@@ -1,9 +1,11 @@
-import { Flex, Heading, Button } from "@chakra-ui/react";
+import { Flex, Heading, Button, SimpleGrid, Box } from "@chakra-ui/react";
 
 import { motion } from "framer-motion";
 
 import { Header } from "../components/Header";
 import { Logo } from "../components/Logo";
+
+import CardTool from "../components/CardTool";
 
 import Footer from "../components/Footer";
 
@@ -112,24 +114,60 @@ export default function Home() {
 
       <MotionFlex
         id="tools"
-        direction="column"
-        w="100%"
-        h="100vh"
-        my="auto"
-        mx="auto"
-        px="6"
+        h={[null, null, null, "100vh"]}
+        p={6}
         justify="center"
         textAlign="center"
         alignItems="center"
         transition={{
-          type: "spring",
+          type: "expand",
           damping: 20,
           stiffness: 100,
         }}
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
       >
-        sadasd
+        <SimpleGrid flex="1" gap="4" minChildWidth="320px" align="flex-start">
+          <CardTool
+            title="Servidor de Mapas"
+            content="Visualização e análise customizada das bases de dados contidas
+              nessa plataforma."
+          />
+
+          <CardTool
+            title="Servidor de Mapas"
+            content="Visualização e análise customizada das bases de dados contidas
+              nessa plataforma."
+          />
+
+          <CardTool
+            title="Servidor de Mapas"
+            content="Visualização e análise customizada das bases de dados contidas
+              nessa plataforma."
+          />
+
+          <CardTool
+            title="Servidor de Mapas"
+            content="Visualização e análise customizada das bases de dados contidas
+              nessa plataforma."
+          />
+
+          <CardTool
+            title="Servidor de Mapas"
+            content="Visualização e análise customizada das bases de dados contidas
+              nessa plataforma."
+          />
+          <CardTool
+            title="Servidor de Mapas"
+            content="Visualização e análise customizada das bases de dados contidas
+              nessa plataforma."
+          />
+          <CardTool
+            title="Servidor de Mapas"
+            content="Visualização e análise customizada das bases de dados contidas
+              nessa plataforma."
+          />
+        </SimpleGrid>
       </MotionFlex>
 
       <Footer />

@@ -93,7 +93,7 @@ export const Header = () => {
                   <Text
                     fontSize={["2xl", "3xl"]}
                     fontWeight="bold"
-                    color="#1f5582"
+                    color="blue.700"
                     letterSpacing="tight"
                     w="64"
                   >

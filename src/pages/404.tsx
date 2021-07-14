@@ -40,7 +40,7 @@ export const NotFound = () => {
               as={"a"}
               colorScheme={"blue"}
               rounded={"full"}
-              bg={"#1f5582"}
+              bg={"blue.700"}
               _hover={{ bg: "blue.500" }}
             >
               Take me to the home page

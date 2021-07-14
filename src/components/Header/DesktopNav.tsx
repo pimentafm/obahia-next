@@ -67,7 +67,7 @@ export const DesktopNav = (props: BoxProps) => {
                 fontSize={"sm"}
                 fontWeight={500}
                 locale={lang}
-                color="#1f5582"
+                color="blue.700"
                 _hover={{
                   textDecoration: "none",
                   color: "blue.500",

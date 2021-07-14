@@ -12,8 +12,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#1f5582",
-    "background_color": "#1f5582",
+    "theme_color": "blue.700",
+    "background_color": "blue.700",
     "start_url": "http://obahia.dea.ufv.br",
     "display": "standalone"
 }
