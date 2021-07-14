@@ -126,14 +126,9 @@ export default function Home() {
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
       >
-        <SimpleGrid
-          id="tools"
-          flex="1"
-          gap="4"
-          minChildWidth="320px"
-          align="flex-start"
-        >
+        <SimpleGrid flex="1" gap="4" minChildWidth="320px" align="flex-start">
           <CardTool
+            id="tools"
             title="Servidor de Mapas"
             content="Visualização e análise customizada das bases de dados contidas
               nessa plataforma."
