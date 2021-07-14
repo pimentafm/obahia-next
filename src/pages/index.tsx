@@ -114,7 +114,6 @@ export default function Home() {
 
       <MotionFlex
         id="tools"
-        name="tools"
         h={[null, null, null, "100vh"]}
         p={6}
         justify="center"
