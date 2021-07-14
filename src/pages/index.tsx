@@ -138,7 +138,13 @@ export default function Home() {
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
       >
-        <SimpleGrid flex="1" gap="4" minChildWidth="320px" align="flex-start">
+        <SimpleGrid
+          flex="1"
+          gap="4"
+          minChildWidth="320px"
+          spacingY={10}
+          align="flex-start"
+        >
           <CardTool
             icon={GiEarthAmerica}
             title="Servidor de Mapas"
@@ -187,7 +193,7 @@ export default function Home() {
             title="Lucratividade Rural"
             content="Modelo de otimização econômica da atividade agrícola considerando
             o regime hídrico e disponibilidade de outorga regional."
-            url=""
+            url="ruralprofit"
           />
 
           <CardTool
@@ -196,7 +202,7 @@ export default function Home() {
             content="Resumo das ações de governança, mapas para visualização de
             estatísticas municipais de variáveis agrícolas e download de mapas
             anuais da Produção Agrícola Municipal em formato SIG."
-            url=""
+            url="governance"
           />
         </SimpleGrid>
       </MotionFlex>
