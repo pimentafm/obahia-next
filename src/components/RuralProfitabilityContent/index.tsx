@@ -17,15 +17,11 @@ import { motion } from "framer-motion";
 
 const MotionContainer = motion(Container);
 
-import useTranslation from "next-translate/useTranslation";
-
 type SectionTextProps = {
   id?: string;
 };
 
 export default function RuralProfitabilityContent({ id }: SectionTextProps) {
-  const { t, lang } = useTranslation("common");
-
   return (
     <MotionContainer
       maxW={"3xl"}
@@ -46,7 +42,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           color="blue.700"
           lineHeight={"110%"}
         >
-          {t("ruralprofit_t1")}
+          1. Descrição geral
         </Heading>
 
         <Heading
@@ -57,7 +53,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           color="blue.700"
           lineHeight={"110%"}
         >
-          {t("ruralprofit_t11")}
+          1.1 Introdução
         </Heading>
 
         <Text
@@ -71,7 +67,11 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           style={{ textIndent: 50 }}
           color={"blue.700"}
         >
-          {t("ruralprofit_p1")}
+          A programação linear é um método amplamente utilizado para otimização
+          da atividade agrícola com diversos objetivos. Dentre os principais
+          objetivos, estão a otimização de alocação de água, maximização de
+          benefícios econômicos, melhorar o manejo de irrigação e guiar ações de
+          governança.
         </Text>
         <Text
           textAlign="justify"
@@ -84,7 +84,11 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           style={{ textIndent: 50 }}
           color={"blue.700"}
         >
-          {t("ruralprofit_p2")}
+          Neste modelo de programação linear é proposto uma maximização
+          econômica da atividade agrícola, considerando as respostas dadas pelo
+          modelo de previsão do início da estação chuvosa. Este modelo é
+          possível de ser aplicado em diversos níveis de gestão de água como
+          fazendas, municípios e região.
         </Text>
       </Stack>
 
@@ -97,7 +101,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           color="blue.700"
           lineHeight={"110%"}
         >
-          {t("ruralprofit_t2")}
+          2. Modelo de lucratividade rural
         </Heading>
 
         <Heading
@@ -108,7 +112,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           color="blue.700"
           lineHeight={"110%"}
         >
-          {t("ruralprofit_t21")}
+          2.1 Downloads
         </Heading>
 
         <Text
@@ -122,7 +126,8 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           style={{ textIndent: 50 }}
           color={"blue.700"}
         >
-          {t("ruralprofit_p2")}
+          O modelo de lucratividade rural e o manual de uso podem ser baixados
+          nos links a seguir:
         </Text>
 
         <List
@@ -144,11 +149,8 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
             }}
           >
             <ListIcon as={MdCheckCircle} color="green.500" />
-            <NextLink
-              href="ftp://obahia.dea.ufv.br/ruralprofitability/ModeloLucratividadeRural.xlsx"
-              locale={lang}
-            >
-              {t("ruralprofit_model")}
+            <NextLink href="ftp://obahia.dea.ufv.br/ruralprofitability/ModeloLucratividadeRural.xlsx">
+              Modelo de Lucratividade Rural
             </NextLink>
           </ListItem>
           <ListItem
@@ -158,11 +160,8 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
             }}
           >
             <ListIcon as={MdCheckCircle} color="green.500" />
-            <NextLink
-              href="ftp://obahia.dea.ufv.br/ruralprofitability/Manual_ModeloLucratividadeRural.pdf"
-              locale={lang}
-            >
-              {t("ruralprofit_manual")}
+            <NextLink href="ftp://obahia.dea.ufv.br/ruralprofitability/Manual_ModeloLucratividadeRural.pdf">
+              Manual do modelo de Lucratividade Rural
             </NextLink>
           </ListItem>
         </List>

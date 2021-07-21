@@ -10,7 +10,6 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
-import { IoMoon, IoSunny } from "react-icons/io5";
 import NextLink from "next/link";
 
 import { motion } from "framer-motion";
@@ -19,15 +18,10 @@ import { LogoIcon } from "../../components/LogoIcon";
 import { MobileNav } from "../../components/Header/MobileNav";
 import { DesktopNav } from "../../components/Header/DesktopNav";
 
-import ChangeLanguage from "../../components/ChangeLanguage";
-
-import useTranslation from "next-translate/useTranslation";
-
 const MotionFlex = motion(Flex);
 
 export const Header = () => {
   const { isOpen: isMobileNavOpen, onToggle } = useDisclosure();
-  const { lang } = useTranslation();
 
   return (
     <Box>
@@ -77,7 +71,7 @@ export const Header = () => {
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
           >
-            <NextLink href={"/"} locale={lang} passHref>
+            <NextLink href={"/"} passHref>
               <Stack
                 as={"a"}
                 direction={"row"}
@@ -112,8 +106,6 @@ export const Header = () => {
             justify={"flex-end"}
           >
             <DesktopNav display={{ base: "none", md: "flex" }} />
-
-            <ChangeLanguage />
           </Stack>
         </Container>
       </Flex>

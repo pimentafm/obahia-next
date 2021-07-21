@@ -9,11 +9,7 @@ const MotionFlex = motion(Flex);
 
 import Footer from "../components/Footer";
 
-import useTranslation from "next-translate/useTranslation";
-
 export default function Info() {
-  const { t } = useTranslation("common");
-
   return (
     <Fade in={true}>
       <Header />
@@ -55,7 +51,7 @@ export default function Info() {
             lineHeight={"110%"}
             color="white"
           >
-            {t("principal")} <br />
+            Inteligência Territorial e Hídrica para o Oeste da Bahia <br />
           </Heading>
 
           <Flex direction={{ base: "column", sm: "row", md: "row" }}>
@@ -72,7 +68,7 @@ export default function Info() {
                 bg: "blue.500",
               }}
             >
-              {t("button_knowmore")}
+              Saiba mais
             </Button>
           </Flex>
         </MotionFlex>

@@ -1,3 +1,7 @@
-const nextTranslate = require('next-translate')
-
-module.exports = nextTranslate()
+module.exports = {
+  distDir: "build",
+  basePath: "/html/homepage",
+  generateBuildId: async () => {
+    return 'obahia'
+  },
+}
