@@ -17,6 +17,8 @@ import { motion } from "framer-motion";
 
 const MotionContainer = motion(Container);
 
+import useTranslation from "next-translate/useTranslation";
+
 import { linkdata, publications } from "./data";
 
 type SectionTextProps = {
@@ -24,6 +26,8 @@ type SectionTextProps = {
 };
 
 export default function GovernanceContent({ id }: SectionTextProps) {
+  const { t, lang } = useTranslation("common");
+
   return (
     <MotionContainer
       maxW={"3xl"}
@@ -860,7 +864,9 @@ export default function GovernanceContent({ id }: SectionTextProps) {
               }}
             >
               <ListIcon as={MdCheckCircle} color="green.500" />
-              <NextLink href={o.url}>{o.name}</NextLink>
+              <NextLink href={o.url} locale={lang}>
+                {o.name}
+              </NextLink>
             </ListItem>
           ))}
         </List>
@@ -899,7 +905,9 @@ export default function GovernanceContent({ id }: SectionTextProps) {
               }}
             >
               <ListIcon as={MdCheckCircle} color="green.500" />
-              <NextLink href={o.url}>{o.name}</NextLink>
+              <NextLink href={o.url} locale={lang}>
+                {o.name}
+              </NextLink>
             </ListItem>
           ))}
         </List>

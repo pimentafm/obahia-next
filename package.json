@@ -5,8 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "postexport": "./postbuild.sh",
     "start": "next start"
   },
   "dependencies": {
@@ -19,8 +17,10 @@
     "date-fns": "^2.22.1",
     "framer-motion": "^4.1.17",
     "next": "10.2.3",
+    "next-translate": "^1.0.7",
     "nprogress": "^0.2.0",
     "react": "17.0.2",
+    "react-country-flag": "^2.3.0",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0"
   },

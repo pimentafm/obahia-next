@@ -20,9 +20,13 @@ import CardTool from "../components/CardTool";
 
 import Footer from "../components/Footer";
 
+import useTranslation from "next-translate/useTranslation";
+
 const MotionFlex = motion(Flex);
 
 export default function Home() {
+  const { t } = useTranslation("common");
+
   return (
     <Flex direction="column" justifyContent="center">
       <Header />
@@ -64,7 +68,7 @@ export default function Home() {
             lineHeight={"110%"}
             color="white"
           >
-            Inteligência Territorial e Hídrica para o Oeste da Bahia <br />
+            {t("principal")} <br />
           </Heading>
 
           <Flex direction={{ base: "column", sm: "column", md: "row" }}>
@@ -81,7 +85,7 @@ export default function Home() {
                 bg: "blue.500",
               }}
             >
-              Acesse as ferramentas
+              {t("button_tools")}
             </Button>
 
             <Button
@@ -97,7 +101,7 @@ export default function Home() {
                 bg: "blue.500",
               }}
             >
-              Informações adicionais
+              {t("menu_info")}
             </Button>
 
             <Button
@@ -113,7 +117,7 @@ export default function Home() {
                 bg: "blue.500",
               }}
             >
-              Sobre o projeto
+              {t("menu_about")}
             </Button>
           </Flex>
         </MotionFlex>

@@ -7,11 +7,14 @@ import { Logo } from "../components/Logo";
 
 import Footer from "../components/Footer";
 
+import useTranslation from "next-translate/useTranslation";
 import RuralProfitabilityContent from "../components/RuralProfitabilityContent";
 
 const MotionFlex = motion(Flex);
 
 export default function RuralProfitability() {
+  const { t } = useTranslation("common");
+
   return (
     <Flex direction="column" justifyContent="center">
       <Header />
@@ -53,8 +56,7 @@ export default function RuralProfitability() {
             lineHeight={"110%"}
             color="white"
           >
-            Modelo de otimização econômica da atividade agrícola considerando o
-            regime hídrico e disponibilidade de outorga regional.
+            {t("tool_profit")}
           </Heading>
 
           <Flex direction={{ base: "column", sm: "row", md: "row" }}>
@@ -71,7 +73,7 @@ export default function RuralProfitability() {
                 bg: "blue.500",
               }}
             >
-              Saiba mais
+              {t("button_knowmore")}
             </Button>
           </Flex>
         </MotionFlex>

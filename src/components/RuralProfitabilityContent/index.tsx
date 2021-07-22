@@ -17,11 +17,15 @@ import { motion } from "framer-motion";
 
 const MotionContainer = motion(Container);
 
+import useTranslation from "next-translate/useTranslation";
+
 type SectionTextProps = {
   id?: string;
 };
 
 export default function RuralProfitabilityContent({ id }: SectionTextProps) {
+  const { t, lang } = useTranslation("common");
+
   return (
     <MotionContainer
       maxW={"3xl"}
@@ -42,7 +46,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           color="blue.700"
           lineHeight={"110%"}
         >
-          1. Descrição geral
+          {t("ruralprofit_t1")}
         </Heading>
 
         <Heading
@@ -53,7 +57,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           color="blue.700"
           lineHeight={"110%"}
         >
-          1.1 Introdução
+          {t("ruralprofit_t11")}
         </Heading>
 
         <Text
@@ -67,11 +71,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           style={{ textIndent: 50 }}
           color={"blue.700"}
         >
-          A programação linear é um método amplamente utilizado para otimização
-          da atividade agrícola com diversos objetivos. Dentre os principais
-          objetivos, estão a otimização de alocação de água, maximização de
-          benefícios econômicos, melhorar o manejo de irrigação e guiar ações de
-          governança.
+          {t("ruralprofit_p1")}
         </Text>
         <Text
           textAlign="justify"
@@ -84,11 +84,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           style={{ textIndent: 50 }}
           color={"blue.700"}
         >
-          Neste modelo de programação linear é proposto uma maximização
-          econômica da atividade agrícola, considerando as respostas dadas pelo
-          modelo de previsão do início da estação chuvosa. Este modelo é
-          possível de ser aplicado em diversos níveis de gestão de água como
-          fazendas, municípios e região.
+          {t("ruralprofit_p2")}
         </Text>
       </Stack>
 
@@ -101,7 +97,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           color="blue.700"
           lineHeight={"110%"}
         >
-          2. Modelo de lucratividade rural
+          {t("ruralprofit_t2")}
         </Heading>
 
         <Heading
@@ -112,7 +108,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           color="blue.700"
           lineHeight={"110%"}
         >
-          2.1 Downloads
+          {t("ruralprofit_t21")}
         </Heading>
 
         <Text
@@ -126,8 +122,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           style={{ textIndent: 50 }}
           color={"blue.700"}
         >
-          O modelo de lucratividade rural e o manual de uso podem ser baixados
-          nos links a seguir:
+          {t("ruralprofit_p3")}
         </Text>
 
         <List
@@ -149,8 +144,11 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
             }}
           >
             <ListIcon as={MdCheckCircle} color="green.500" />
-            <NextLink href="ftp://obahia.dea.ufv.br/ruralprofitability/ModeloLucratividadeRural.xlsx">
-              Modelo de Lucratividade Rural
+            <NextLink
+              href="ftp://obahia.dea.ufv.br/ruralprofitability/ModeloLucratividadeRural.xlsx"
+              locale={lang}
+            >
+              {t("ruralprofit_model")}
             </NextLink>
           </ListItem>
           <ListItem
@@ -160,8 +158,11 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
             }}
           >
             <ListIcon as={MdCheckCircle} color="green.500" />
-            <NextLink href="ftp://obahia.dea.ufv.br/ruralprofitability/Manual_ModeloLucratividadeRural.pdf">
-              Manual do modelo de Lucratividade Rural
+            <NextLink
+              href="ftp://obahia.dea.ufv.br/ruralprofitability/Manual_ModeloLucratividadeRural.pdf"
+              locale={lang}
+            >
+              {t("ruralprofit_manual")}
             </NextLink>
           </ListItem>
         </List>

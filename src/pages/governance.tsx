@@ -7,11 +7,14 @@ import { Logo } from "../components/Logo";
 
 import Footer from "../components/Footer";
 
+import useTranslation from "next-translate/useTranslation";
 import GovernanceContent from "../components/GovernanceContent";
 
 const MotionFlex = motion(Flex);
 
 export default function Governance() {
+  const { t } = useTranslation("common");
+
   return (
     <Flex direction="column" justifyContent="center">
       <Header />
@@ -51,9 +54,7 @@ export default function Governance() {
             lineHeight={"110%"}
             color="white"
           >
-            Resumo das ações de governança, mapas para visualização de
-            estatísticas municipais de variáveis agrícolas e download de mapas
-            anuais da Produção Agrícola Municipal em formato SIG.
+            {t("tool_governance")}
           </Heading>
 
           <Flex direction={{ base: "column", sm: "row", md: "row" }}>
@@ -70,7 +71,7 @@ export default function Governance() {
                 bg: "blue.500",
               }}
             >
-              Saiba mais
+              {t("button_knowmore")}
             </Button>
           </Flex>
         </MotionFlex>

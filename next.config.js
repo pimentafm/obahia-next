@@ -1,7 +1,3 @@
-module.exports = {
-  distDir: "build",
-  basePath: "/html/homepage",
-  generateBuildId: async () => {
-    return 'obahia'
-  },
-}
+const nextTranslate = require('next-translate')
+
+module.exports = nextTranslate()

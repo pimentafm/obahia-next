@@ -6,7 +6,11 @@ import { Logo } from "../Logo";
 
 const MotionContainer = motion(Container);
 
+import useTranslation from "next-translate/useTranslation";
+
 export default function Hero() {
+  const { t } = useTranslation("common");
+
   return (
     <MotionContainer
       maxW={"3xl"}
@@ -33,7 +37,7 @@ export default function Hero() {
           color="blue.700"
           lineHeight={"110%"}
         >
-          Inteligência Territorial e Hídrica para o Oeste da Bahia <br />
+          {t("principal")} <br />
         </Heading>
         {/* <Text textAlign="justify" style={{ textIndent: 50 }} color={"blue.500"}>
           {content1}

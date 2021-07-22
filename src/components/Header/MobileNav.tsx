@@ -10,6 +10,8 @@ import {
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 
+import useTranslation from "next-translate/useTranslation";
+
 import { motion } from "framer-motion";
 interface MobileNavProps {
   isOpen: boolean;
@@ -27,20 +29,39 @@ const MotionStack = motion(Stack);
 export const MobileNav = ({ isOpen }: MobileNavProps) => {
   if (!isOpen) return null;
 
-  const [navItens] = useState<NavItem[]>([
+  const { t, lang } = useTranslation("common");
+
+  const [navItens, setNavItens] = useState<NavItem[]>([
     {
-      label: "Home",
+      label: t("menu_home"),
       href: "/",
     },
     {
-      label: "Informações adicionais",
+      label: t("menu_info"),
       href: "/info",
     },
     {
-      label: "Sobre",
+      label: t("menu_about"),
       href: "/about",
     },
   ]);
+
+  useEffect(() => {
+    setNavItens([
+      {
+        label: t("menu_home"),
+        href: "/",
+      },
+      {
+        label: t("menu_info"),
+        href: "/info",
+      },
+      {
+        label: t("menu_about"),
+        href: "/about",
+      },
+    ]);
+  }, [lang]);
 
   return (
     <MotionStack
@@ -72,6 +93,7 @@ export const MobileNav = ({ isOpen }: MobileNavProps) => {
 };
 
 const MobileNavItem = ({ href, children, label }: NavItem) => {
+  const { lang } = useTranslation("common");
   const { isOpen, onToggle } = useDisclosure();
 
   const handleToggle = (e: SyntheticEvent) => {
@@ -91,7 +113,7 @@ const MobileNavItem = ({ href, children, label }: NavItem) => {
           textDecoration: "none",
         }}
       >
-        <NextLink href={href} passHref>
+        <NextLink href={href} locale={lang} passHref>
           <Text
             fontWeight={600}
             color="blue.600"

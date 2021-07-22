@@ -14,6 +14,8 @@ import { getYear } from "date-fns";
 import { FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
 
+import useTranslation from "next-translate/useTranslation";
+
 import NextLink from "next/link";
 
 const SocialButton = ({
@@ -50,6 +52,8 @@ const SocialButton = ({
 };
 
 export default function SmallCentered() {
+  const { t, lang } = useTranslation("common");
+
   const year = getYear(Date.now());
 
   return (
@@ -65,9 +69,15 @@ export default function SmallCentered() {
         <Image src="images/grupo.png" h="80px" />
 
         <Stack direction={"row"} spacing={6}>
-          <NextLink href={"/"}>Home</NextLink>
-          <NextLink href={"/"}>Informações adicionais</NextLink>
-          <NextLink href={"/about"}>Sobre</NextLink>
+          <NextLink href={"/"} locale={lang}>
+            {t("menu_home")}
+          </NextLink>
+          <NextLink href={"/"} locale={lang}>
+            {t("menu_info")}
+          </NextLink>
+          <NextLink href={"/about"} locale={lang}>
+            {t("menu_about")}
+          </NextLink>
         </Stack>
       </Container>
 
