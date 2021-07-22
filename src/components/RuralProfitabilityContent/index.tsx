@@ -122,7 +122,7 @@ export default function RuralProfitabilityContent({ id }: SectionTextProps) {
           style={{ textIndent: 50 }}
           color={"blue.700"}
         >
-          {t("ruralprofit_p2")}
+          {t("ruralprofit_p3")}
         </Text>
 
         <List
